@@ -2,10 +2,10 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="">
-      <h1>Hello Bulsu!</h1>
-        <h2>this is the home page</h2>
-      
-    </div>
+  <div>
+    <h1>Home Page</h1>
+
+    <Link href="/login">Go to Login Page</Link>
+  </div>
   );
 }
