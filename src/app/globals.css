@@ -1,39 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #e6f165;
-  --foreground: #56480d;
-  --button-background: #e8ed70;
+  --background: #f9edf0;
+  --foreground: #261311;
+  --button-background: #c3955b;
+  --button-hover: #ba6a36;
+  --form-background: #e6c8b7;
+  --dark-accent: #1c3934;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: 'Montserrat', sans-serif;
   --font-mono: var(--font-geist-mono);
 }
-
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
-.button {
- 
-  color: var(--foreground);
 
-  @apply flex py-2 px-3 rounded transition-all ease-in-out duration-300 cursor-pointer min-h-10;
+.button {
+  color: var(--dark-accent); 
+  @apply flex py-2 px-3 rounded transition-all ease-in-out duration-300 cursor-pointer min-h-10 font-semibold shadow-md;
+  
   &.button--default {
-    @apply bg-gray-200 border-gray-300 hover:bg-gray-300 hover:border-gray-500;
+    background-color: var(--button-background);
+    border: 1px solid var(--button-background);
+    
+    &:hover {
+      background-color: var(--button-hover);
+      border-color: var(--button-hover);
+      color: var(--foreground); 
+      @apply shadow-lg;
+    }
   }
 }
-form{
-  background-color: rgb(166, 206, 153);
+
+form {
+  background-color: var(--form-background);
+  @apply p-6 rounded-xl shadow-inner;
+
   input, textarea {
-    @apply border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500;
+    color: var(--foreground); 
+    @apply border border-gray-300 rounded px-3 py-2 focus:outline-none w-full;
+    
+    &:focus {
+      border-color: var(--button-background);
+      box-shadow: 0 0 0 2px var(--button-background);
+    }
   } 
 }
-p{
-  color: rgb(59, 34, 34);
+
+p {
+  color: var(--foreground);
 }
