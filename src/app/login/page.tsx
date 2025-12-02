@@ -1,10 +1,12 @@
-import Header from '@/app/components/Header'
+import Default from "../templates/Default";
+
 
 export default function Login() {
   return (
-    <div className="">
-      <Header />
-      Hello Login
-    </div>
+    <Default>
+      <div className="">
+        Login
+      </div>
+    </Default>
   );
 }

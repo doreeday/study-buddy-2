@@ -1,10 +1,11 @@
-import Header from '@/app/components/Header'
+import Default from "./templates/Default";
 
 export default function Home() {
   return (
-    <div className="">
-      <Header />
-      Hello Bulsu
-    </div>
+    <Default>
+      <div className="">
+        Home page
+      </div>
+    </Default>
   );
 }

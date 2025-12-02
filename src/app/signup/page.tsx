@@ -1,10 +1,11 @@
-import Header from '@/app/components/Header'
+import Default from "../templates/Default";
 
 export default function Signup() {
   return (
-    <div className="">
-      <Header />
-      Hello Signup
-    </div>
+    <Default>
+      <div className="">
+        Signup
+      </div>
+    </Default>
   );
 }
