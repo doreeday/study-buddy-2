@@ -11,7 +11,7 @@ export default function Layout({
   return (
     <div className="flex flex-col min-h-dvh border">
       <Header />
-      <main className={`container mx-auto p-5 flex-1`}>{children}</main>
+      <main className={`container mx-auto p-5 flex-1 ${className}`}>{children}</main>
       <Footer />
     </div>
   )
