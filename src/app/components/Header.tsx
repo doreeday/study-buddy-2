@@ -9,11 +9,12 @@ export default function Header() {
         {/* Logo image from public folder */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/StudyTayoLogo.png"   
+            src="/StudyTayoLogo.png"  
             alt="StudyTayo Logo"
             width={180}               
             height={70}
             priority                   
+          />
         </Link>
 
         <div className="flex gap-3">
