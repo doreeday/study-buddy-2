@@ -1,11 +1,10 @@
-import Link from "next/link";
+import Header from '@/app/components/Header'
 
 export default function Home() {
   return (
-  <div>
-    <h1>Home Page</h1>
-
-    <Link href="/login">Go to Login Page</Link>
-  </div>
+    <div className="">
+      <Header />
+      Hello Bulsu
+    </div>
   );
 }

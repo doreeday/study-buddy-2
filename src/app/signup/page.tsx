@@ -1,10 +1,10 @@
 import Header from '@/app/components/Header'
 
-export default function Login() {
+export default function Signup() {
   return (
     <div className="">
       <Header />
-      Hello Login
+      Hello Signup
     </div>
   );
 }
