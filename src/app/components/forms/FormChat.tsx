@@ -31,16 +31,16 @@ export default function FormChat() {
     e.preventDefault()
     if (!input.trim()) return
 
-    // try {
-    //   setIsLoading(true)
-    //   await sendMessage({ text: input })
-    //   setInput('')
-    // } catch (err: any) {
-    //   console.log('error: ', err)
-    //   setError(err.toString())
-    // } finally {
-    //   setIsLoading(false)
-    // }
+    try {
+      setIsLoading(true)
+      await sendMessage({ text: input })
+      setInput('')
+    } catch (err: any) {
+      console.log('error: ', err)
+      setError(err.toString())
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   return (
