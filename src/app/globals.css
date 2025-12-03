@@ -2,12 +2,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f9edf0;
+  --background: #f8e3d7;
   --foreground: #261311;
   --button-background: #c3955b;
   --button-hover: #ba6a36;
   --form-background: #e6c8b7;
-  --dark-accent: #1c3934;
+  --dark-accent: #532d25;
 }
 
 @theme inline {
