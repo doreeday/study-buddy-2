@@ -54,7 +54,7 @@ export default function Home() {
         <div className="w-full md:flex-1 flex flex-col justify-between px-4 md:px-6">
 
           {/* Welcome message */}
-          <div className="text-center mt-35 md -0">
+          <div className="text-center mt-10 md -0">
             <h1 className="text-4xl md:text-5xl font-bold">Hello, Guest!</h1>
             <p className="mt-10 text-lg md:text-xl md-2">
               Welcome to Study Buddy!{" "}
