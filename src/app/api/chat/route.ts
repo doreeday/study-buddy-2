@@ -2,6 +2,7 @@ import { google } from '@ai-sdk/google'
 import { streamText, convertToModelMessages } from 'ai'
 import { getServerSession } from 'next-auth'
 
+
 export async function POST(req: Request) {
   // Session
   const session = await getServerSession()
