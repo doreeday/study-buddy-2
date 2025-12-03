@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react'
 
 export default function Home() {
   const messages = [
-    "What's up! I'm your Study Buddy!",
+    "Tara, Study Tayo?",
     "Need help with notes?",
     "Let's do this together!",
     "Ask me anything!",
