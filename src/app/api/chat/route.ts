@@ -12,8 +12,8 @@ export async function POST(req: Request) {
   const { messages } = await req.json()
   const lastUserMessage = messages[messages.length - 1]?.content ?? ''
 
-  // // AI
-  // let ragContent = ''
+  // AI
+  const ragContent = ''
 
   if (session) {
     // Which never going to happen today
